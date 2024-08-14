@@ -1,0 +1,316 @@
+{
+ "meta": {
+  "creator": "cds-dk 7.9.6"
+ },
+ "$version": "2.0",
+ "definitions": {
+  "metadata": {
+   "kind": "service",
+   "@cds.external": true,
+   "@m.IsDefaultEntityContainer": "true",
+   "@sap.supported.formats": "atom json xlsx"
+  },
+  "metadata.ZPLOTNOSS_ENTSet": {
+   "kind": "entity",
+   "@cds.external": true,
+   "@cds.persistence.skip": true,
+   "@sap.creatable": "false",
+   "@sap.updatable": "false",
+   "@sap.deletable": "false",
+   "@sap.pageable": "false",
+   "@sap.content.version": "1",
+   "elements": {
+    "Plotno": {
+     "key": true,
+     "type": "cds.String",
+     "length": 10,
+     "@sap.unicode": "false",
+     "@sap.label": "Plot number",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Vehicalno": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Vehicle number",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Available": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Availability check",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Drivername": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Driver name",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Phone": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Phone number",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Vehicaltype": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "vehicle type",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Assigneddate": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Assigneddate",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Unassigneddate": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Unassigneddate",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    }
+   }
+  },
+  "metadata.ZHISTORY_ENTSet": {
+   "kind": "entity",
+   "@cds.external": true,
+   "@cds.persistence.skip": true,
+   "@sap.creatable": "false",
+   "@sap.updatable": "false",
+   "@sap.deletable": "false",
+   "@sap.pageable": "false",
+   "@sap.content.version": "1",
+   "elements": {
+    "Uuid": {
+     "key": true,
+     "type": "cds.String",
+     "length": 36,
+     "@sap.unicode": "false",
+     "@sap.label": "Unique ID",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Vehicalno": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Vehicle number",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Drivername": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Driver name",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Phone": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Phone number",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Vehicaltype": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Vehical type",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Assigneddate": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Assigned Date",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Unassigneddate": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "unassigned Date",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Plotno": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Plot number",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    }
+   }
+  },
+  "metadata.ZRESERVATION_ENTSet": {
+   "kind": "entity",
+   "@cds.external": true,
+   "@cds.persistence.skip": true,
+   "@sap.creatable": "false",
+   "@sap.updatable": "false",
+   "@sap.deletable": "false",
+   "@sap.pageable": "false",
+   "@sap.content.version": "1",
+   "elements": {
+    "Uuid": {
+     "key": true,
+     "type": "cds.String",
+     "length": 36,
+     "@sap.unicode": "false",
+     "@sap.label": "Unique ID",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Vehicalno": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "vehicle number",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Drivername": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Driver name",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Phone": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Phone number",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Vehicaltype": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Vehical type",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Expectedtime": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Expected time",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Plotno": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Plot number",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Vendorname": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Vendorname",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Vendornumber": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "vendor number",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Notify": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Notify",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.sortable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    }
+   }
+  }
+ }
+}
